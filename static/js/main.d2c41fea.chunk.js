@@ -1,2 +1,0 @@
-(this["webpackJsonpip-tracker-fm"]=this["webpackJsonpip-tracker-fm"]||[]).push([[0],{11:function(e,c,r){"use strict";r.r(c);var t=r(1),n=r.n(t),s=r(3),i=r.n(s),a=(r(8),r(9),r(0));var d=function(){return Object(a.jsx)("div",{className:"App",children:Object(a.jsx)("header",{children:Object(a.jsx)("h1",{children:"IP Address Tracker"})})})};i.a.render(Object(a.jsx)(n.a.StrictMode,{children:Object(a.jsx)(d,{})}),document.getElementById("root"))},8:function(e,c,r){},9:function(e,c,r){}},[[11,1,2]]]);
-//# sourceMappingURL=main.d2c41fea.chunk.js.map
