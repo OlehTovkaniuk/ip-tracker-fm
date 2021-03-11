@@ -1,17 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 export default function Form() {
-    const [inputValue, setInputValue] = useState('Search for any IP address or domain');
+    const [inputValue, setInputValue] = useState('');
 
     const handleChange = (e) => {
-        setInputValue();
+        setInputValue(e.target.value);
     }
 
+    const handleClick = (e) => {
+        console.log('value is: ', inputValue);
+        e.preventDefault();
+    }
 
     return (
         <form>
-            <input type="text" value={inputValue} onChange={handleChange} />
-            <input type="submit" value=">" />
+            <input type="text" value={inputValue} onChange={handleChange} placeholder="Search for any IP address or domain" />
+            <input type="submit" value=">>>" onClick={handleClick} />
         </form>
     )
 }

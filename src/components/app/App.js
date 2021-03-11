@@ -1,3 +1,4 @@
+import Form from '../form/Form';
 import './App.css';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
       <header>
         <h1>IP Address Tracker</h1>
       </header>
+      <Form />
     </div>
   );
 }
