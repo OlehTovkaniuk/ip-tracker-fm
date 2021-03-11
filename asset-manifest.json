@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ip-tracker-fm/static/css/main.8573f445.chunk.css",
+    "main.js": "/ip-tracker-fm/static/js/main.d2c41fea.chunk.js",
+    "main.js.map": "/ip-tracker-fm/static/js/main.d2c41fea.chunk.js.map",
+    "runtime-main.js": "/ip-tracker-fm/static/js/runtime-main.76841015.js",
+    "runtime-main.js.map": "/ip-tracker-fm/static/js/runtime-main.76841015.js.map",
+    "static/js/2.e4c45951.chunk.js": "/ip-tracker-fm/static/js/2.e4c45951.chunk.js",
+    "static/js/2.e4c45951.chunk.js.map": "/ip-tracker-fm/static/js/2.e4c45951.chunk.js.map",
+    "index.html": "/ip-tracker-fm/index.html",
+    "static/css/main.8573f445.chunk.css.map": "/ip-tracker-fm/static/css/main.8573f445.chunk.css.map",
+    "static/js/2.e4c45951.chunk.js.LICENSE.txt": "/ip-tracker-fm/static/js/2.e4c45951.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.76841015.js",
+    "static/js/2.e4c45951.chunk.js",
+    "static/css/main.8573f445.chunk.css",
+    "static/js/main.d2c41fea.chunk.js"
+  ]
+}
