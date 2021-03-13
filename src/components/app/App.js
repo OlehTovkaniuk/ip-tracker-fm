@@ -1,5 +1,6 @@
+
 import Form from '../form/Form';
-import './App.css';
+import Infobanner from '../infobanner/Infobanner';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <h1>IP Address Tracker</h1>
       </header>
       <Form />
+      <Infobanner />
     </div>
   );
 }
