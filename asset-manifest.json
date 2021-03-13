@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/ip-tracker-fm/static/css/main.8573f445.chunk.css",
-    "main.js": "/ip-tracker-fm/static/js/main.9a0534ab.chunk.js",
-    "main.js.map": "/ip-tracker-fm/static/js/main.9a0534ab.chunk.js.map",
+    "main.css": "/ip-tracker-fm/static/css/main.69b7cb63.chunk.css",
+    "main.js": "/ip-tracker-fm/static/js/main.fdef004a.chunk.js",
+    "main.js.map": "/ip-tracker-fm/static/js/main.fdef004a.chunk.js.map",
     "runtime-main.js": "/ip-tracker-fm/static/js/runtime-main.76841015.js",
     "runtime-main.js.map": "/ip-tracker-fm/static/js/runtime-main.76841015.js.map",
-    "static/js/2.787b610d.chunk.js": "/ip-tracker-fm/static/js/2.787b610d.chunk.js",
-    "static/js/2.787b610d.chunk.js.map": "/ip-tracker-fm/static/js/2.787b610d.chunk.js.map",
+    "static/js/2.aa1baf37.chunk.js": "/ip-tracker-fm/static/js/2.aa1baf37.chunk.js",
+    "static/js/2.aa1baf37.chunk.js.map": "/ip-tracker-fm/static/js/2.aa1baf37.chunk.js.map",
     "index.html": "/ip-tracker-fm/index.html",
-    "static/css/main.8573f445.chunk.css.map": "/ip-tracker-fm/static/css/main.8573f445.chunk.css.map",
-    "static/js/2.787b610d.chunk.js.LICENSE.txt": "/ip-tracker-fm/static/js/2.787b610d.chunk.js.LICENSE.txt"
+    "static/css/main.69b7cb63.chunk.css.map": "/ip-tracker-fm/static/css/main.69b7cb63.chunk.css.map",
+    "static/js/2.aa1baf37.chunk.js.LICENSE.txt": "/ip-tracker-fm/static/js/2.aa1baf37.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.76841015.js",
-    "static/js/2.787b610d.chunk.js",
-    "static/css/main.8573f445.chunk.css",
-    "static/js/main.9a0534ab.chunk.js"
+    "static/js/2.aa1baf37.chunk.js",
+    "static/css/main.69b7cb63.chunk.css",
+    "static/js/main.fdef004a.chunk.js"
   ]
 }
