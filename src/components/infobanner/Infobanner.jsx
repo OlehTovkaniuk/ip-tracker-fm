@@ -5,7 +5,6 @@ export default function Infobanner() {
 
     useEffect(() => {
         const apiKey = process.env.REACT_APP_IP_API_KEY;
-        console.log(apiKey);
         fetch(`https://geo.ipify.org/api/v1?apiKey=${apiKey}`)
             .then(response => {
                 if (response.ok) {
@@ -19,7 +18,6 @@ export default function Infobanner() {
             })
             .then(data => {
                 setBlogs(JSON.stringify(data));
-                console.log(data);
             })
             .catch(err => {
                 setBlogs(`${err}`);
