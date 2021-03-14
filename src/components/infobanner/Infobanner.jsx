@@ -7,7 +7,7 @@ export default function Infobanner({ ipData, dataIsReady, isError }) {
             {!dataIsReady && (<p>Loading...</p>)}
             {isError && (<div>
                 <h2>Error!</h2>
-                <p>Input correct IP!</p>
+                <p>Input correct IP or URL!</p>
             </div>)}
             {dataIsReady && !isError && (<ul>
                 <li>

@@ -9,8 +9,34 @@ function App() {
   const [isError, setIsError] = useState(false);
 
   useEffect(() => {
+    fetchApiData();
+  }, []);
+
+  const handleUserIput = (e) => {
+    console.log(e.target.value);
+    setUserInput(e.target.value);
+  }
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    fetchApiData();
+  }
+
+  const queryString = () => {
+    // checks kind of input data, url(domain name) or ip
+    if (/[a-z]/gi.test(userInput) === false) {
+      return `&ipAddress=${userInput}`;
+    } else {
+      return `&domain=${userInput}`
+    }
+  }
+
+  const fetchApiData = () => {
+    setIsError(false);
+    setDataIsReady(false);
     const apiKey = process.env.REACT_APP_IP_API_KEY;
-    fetch(`https://geo.ipify.org/api/v1?apiKey=${apiKey}`)
+
+    fetch(`https://geo.ipify.org/api/v1?apiKey=${apiKey}${userInput ? queryString() : ''}`)
       .then(response => {
         if (response.ok) {
           return response.json();
@@ -28,38 +54,6 @@ function App() {
       .catch(err => {
         setIsError(true);
         console.log(err);
-      });
-  }, []);
-
-  const handleUserIput = (e) => {
-    console.log(e.target.value);
-    setUserInput(e.target.value);
-  }
-
-  const handleSearch = (e) => {
-    // not completed
-    e.preventDefault();
-    setIsError(false);
-    setDataIsReady(false);
-    const apiKey = process.env.REACT_APP_IP_API_KEY;
-    fetch(`https://geo.ipify.org/api/v1?apiKey=${apiKey}&ipAddress=${userInput}`)
-      .then(response => {
-        setDataIsReady(true);
-        if (response.ok) {
-          return response.json();
-        }
-        return response.json().then(errData => {
-          const { code, messages } = errData;
-          const err = new Error(`${code} ${messages}`);
-          throw err;
-        });
-      })
-      .then(data => {
-        setIpData(data);
-        setDataIsReady(true);
-      })
-      .catch(err => {
-        setIsError(true);
       });
   }
 
