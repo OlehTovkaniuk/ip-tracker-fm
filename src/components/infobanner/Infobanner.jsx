@@ -1,36 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-export default function Infobanner() {
-    const [blogs, setBlogs] = useState(null);
-
-    useEffect(() => {
-        const apiKey = process.env.REACT_APP_IP_API_KEY;
-        fetch(`https://geo.ipify.org/api/v1?apiKey=${apiKey}`)
-            .then(response => {
-                if (response.ok) {
-                    return response.json();
-                }
-                return response.json().then(errData => {
-                    const { code, messages } = errData;
-                    const err = new Error(`${code} ${messages}`);
-                    throw err;
-                });
-            })
-            .then(data => {
-                setBlogs(JSON.stringify(data));
-            })
-            .catch(err => {
-                setBlogs(`${err}`);
-                console.log(err);
-            });
-    }, []);
-
+export default function Infobanner({ ipData, dataIsReady }) {
 
     return (
         <div className='banner-wrapper'>
-            <ul>
-                <p>{blogs}</p>
-            </ul>
+            {dataIsReady && (<ul>
+                <li>
+                    <span>IP ADDRESS</span><br />
+                    <span>{ipData.ip}</span>
+                </li>
+                <li>
+                    <span>LOCATION</span><br />
+                    <span>{`${ipData.location.city}, ${ipData.location.region}, ${ipData.location.country}`}</span>
+                </li>
+                <li>
+                    <span>TIMEZONE</span><br />
+                    <span>{ipData.location.timezone}</span>
+                </li>
+                <li>
+                    <span>ISP</span><br />
+                    <span>{ipData.isp}</span>
+                </li>
+            </ul>)}
         </div>
     )
 }
