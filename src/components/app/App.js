@@ -39,6 +39,7 @@ function App() {
   const handleSearch = (e) => {
     // not completed
     e.preventDefault();
+    setIsError(false);
     setDataIsReady(false);
     const apiKey = process.env.REACT_APP_IP_API_KEY;
     fetch(`https://geo.ipify.org/api/v1?apiKey=${apiKey}&ipAddress=${userInput}`)
