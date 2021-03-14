@@ -1,22 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-export default function Form() {
-    const [inputValue, setInputValue] = useState('');
-
-    const handleChange = (e) => {
-        setInputValue(e.target.value);
-    }
-
-    const handleClick = (e) => {
-        console.log('value is: ', inputValue);
-        e.preventDefault();
-        setInputValue('');
-    }
+export default function Form({ onChange, onSubmit }) {
 
     return (
         <form>
-            <input type="text" value={inputValue} onChange={handleChange} placeholder="Search for any IP address or domain..." />
-            <input type="submit" value=">>>" onClick={handleClick} />
+            <input
+                type="text"
+                onChange={onChange}
+                placeholder="Search for any IP address or domain..."
+            />
+            <input type="submit" value=">>>" onClick={onSubmit} />
         </form>
     )
 }
