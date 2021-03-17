@@ -1,15 +1,15 @@
 import React from 'react';
 
-export default function Infobanner({ ipData, dataIsReady, isError }) {
+export default function Infobanner({ ipData, isFetching, isError }) {
 
     return (
         <div className='banner-wrapper'>
-            {!dataIsReady && (<p>Loading...</p>)}
+            {isFetching && (<p>Loading...</p>)}
             {isError && (<div>
                 <h2>Error!</h2>
                 <p>Input correct IP or URL!</p>
             </div>)}
-            {dataIsReady && !isError && (<ul>
+            {!isFetching && !isError && (<ul>
                 <li>
                     <span>IP ADDRESS</span><br />
                     <span>{ipData.ip}</span>
