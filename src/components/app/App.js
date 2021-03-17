@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Form from '../form/Form';
 import Infobanner from '../infobanner/Infobanner';
-import Map from '../map/Map'
+import Map from '../map/Map';
 
 function App() {
   const [ipData, setIpData] = useState({});

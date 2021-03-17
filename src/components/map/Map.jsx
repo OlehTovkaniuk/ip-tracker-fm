@@ -1,11 +1,39 @@
-import React, { useEffect } from 'react';
-import './Map.css';
+import React, { Component } from 'react';
+import L from 'leaflet';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import iconLocation from '../../img/icon-location.svg';
 
-export default function Map({ ipData, isFetching, isError }) {
+const myIcon = L.icon({
+    iconUrl: iconLocation,
+    iconSize: [33, 41],
+    iconAnchor: [12.5, 41],
+    popupAnchor: [0, -41]
+})
 
-    return (
-        <div id="map-container">
-            ----Map----
-        </div>
-    )
+export default class Map extends Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (
+            <div>
+                {!this.props.isFetching && !this.props.isError && (
+                    <MapContainer className='map' center={[this.props.ipData.location.lat, this.props.ipData.location.lng]} zoom={15.5} scrollWheelZoom={false}>
+                        <TileLayer
+                            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        />
+                        <Marker position={[this.props.ipData.location.lat, this.props.ipData.location.lng]} icon={myIcon}>
+                            <Popup>
+                                A pretty CSS3 popup. <br /> Easily customizable.
+                            </Popup>
+                        </Marker>
+                    </MapContainer>
+                )}
+            </div>
+        )
+    }
 }
+
+
+
