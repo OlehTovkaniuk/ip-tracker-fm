@@ -53,10 +53,10 @@ div.banner{
       margin-bottom: 50px;
     }
     
-  div.banner{
-    position: absolute;
-    top: -80px;
-  }
+    div.banner{
+      position: absolute;
+      top: -80px;
+    }
 
     ul {
       margin: 30px auto;
