@@ -8,7 +8,6 @@
 body {
   font-family: 'Rubik', sans-serif;
   background: no-repeat url(./img/pattern-bg.png) bottom;
-  background-size: cover;
 }
 
 header {
@@ -36,5 +35,12 @@ div.top {
 
   div.top {
     padding-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 1400px){
+
+  body {
+    background-size: cover;
   }
 }
