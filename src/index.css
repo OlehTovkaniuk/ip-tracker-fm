@@ -7,7 +7,8 @@
 
 body {
   font-family: 'Rubik', sans-serif;
-  background: no-repeat url(./img/pattern-bg.png) bottom cover;
+  background: no-repeat url(./img/pattern-bg.png) bottom;
+  background-size: cover;
 }
 
 header {
