@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import L from 'leaflet';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import iconLocation from '../../img/icon-location.svg';
+import './Map.css';
 
 const myIcon = L.icon({
     iconUrl: iconLocation,
@@ -11,14 +12,11 @@ const myIcon = L.icon({
 })
 
 export default class Map extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (
             <div>
                 {!this.props.isFetching && !this.props.isError && (
-                    <MapContainer className='map' center={[this.props.ipData.location.lat, this.props.ipData.location.lng]} zoom={15.5} scrollWheelZoom={false}>
+                    <MapContainer className='map' center={[this.props.ipData.location.lat, this.props.ipData.location.lng]} zoom={15.5} zoomControl={false} scrollWheelZoom={true}>
                         <TileLayer
                             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

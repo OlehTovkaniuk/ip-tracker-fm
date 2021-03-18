@@ -1,0 +1,36 @@
+form {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 95%;
+    margin: 0px auto;
+  }
+  
+  form input[type=text] {
+    width: 85%;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+  }
+  form input[type=submit] {
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0 5px;
+    width: 60px;
+    height: 60px;
+    background: center no-repeat url(../../img/icon-arrow.svg);
+    background-color: black;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  @media only screen and (min-width: 576px){
+    form {
+        max-width: 500px;
+    }
+  }

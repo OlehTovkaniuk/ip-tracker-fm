@@ -14,7 +14,6 @@ function App() {
   }, []);
 
   const handleUserIput = (e) => {
-    console.log(e.target.value);
     setUserInput(e.target.value);
   }
 
@@ -51,7 +50,6 @@ function App() {
       .then(data => {
         setIpData(data);
         setIsFetching(false);
-        console.log('lat: ', data.location.lat, 'lng: ', data.location.lng)
       })
       .catch(err => {
         setIsFetching(false);
@@ -62,11 +60,13 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <h1>IP Address Tracker</h1>
-      </header>
-      <Form onChange={handleUserIput} onSubmit={handleSearch} />
-      <Infobanner ipData={ipData} isFetching={isFetching} isError={isError} />
+      <div className="top">
+        <header>
+          <h1>IP Address Tracker</h1>
+        </header>
+        <Form onChange={handleUserIput} onSubmit={handleSearch} />
+        <Infobanner ipData={ipData} isFetching={isFetching} isError={isError} />
+      </div>
       <Map ipData={ipData} isFetching={isFetching} isError={isError} />
     </div>
   );

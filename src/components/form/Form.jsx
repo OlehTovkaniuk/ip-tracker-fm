@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Form.css';
 
 export default function Form({ onChange, onSubmit }) {
 
@@ -9,7 +10,7 @@ export default function Form({ onChange, onSubmit }) {
                 onChange={onChange}
                 placeholder="Search for any IP address or domain..."
             />
-            <input type="submit" value=">>>" onClick={onSubmit} />
+            <input type="submit" value="" onClick={onSubmit} />
         </form>
     )
 }
