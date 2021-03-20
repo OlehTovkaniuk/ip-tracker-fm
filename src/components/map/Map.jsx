@@ -14,7 +14,7 @@ const myIcon = L.icon({
 export default class Map extends Component {
     render() {
         return (
-            <div>
+            <div className="map-container">
                 {!this.props.isFetching && !this.props.isError && (
                     <MapContainer className='map' center={[this.props.ipData.location.lat, this.props.ipData.location.lng]} zoom={15.5} zoomControl={false} scrollWheelZoom={true}>
                         <TileLayer
