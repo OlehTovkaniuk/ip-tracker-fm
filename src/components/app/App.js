@@ -68,7 +68,9 @@ function App() {
         <Infobanner ipData={ipData} isFetching={isFetching} isError={isError} />
       </div>
       <Map ipData={ipData} isFetching={isFetching} isError={isError} />
-      <p id="reference">Desingned by <a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a>. Developed by <a href="https://www.linkedin.com/in/oleh-tovkaniuk-456a3114a/" target="_blank">Oleh Tovkaniuk</a></p>
+      <footer>
+        <p id="reference">Designed by <a href="https://www.frontendmentor.io/" target="_blank" rel="noreferrer">Frontend Mentor</a><br />Developed by <a href="https://www.linkedin.com/in/oleh-tovkaniuk-456a3114a/" target="_blank" rel="noreferrer">Oleh Tovkaniuk</a></p>
+      </footer>
     </div>
   );
 }
