@@ -31,6 +31,13 @@ div.top {
   background-position: 0;
 }
 
+#reference {
+  color: white;
+  text-align: right;
+  margin-right: 40px;
+  font-weight: 300;
+}
+
 @media only screen and (min-width: 992px){
 
   div.top {
