@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# IP address tracker application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
 
-### `yarn start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### The challenge
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Users should be able to:
 
-### `yarn test`
+- View the optimal layout for each page depending on their device's screen size
+- See hover states for all interactive elements on the page
+- See their own IP address on the map on the initial page load
+- Search for any IP addresses or domains and see the key information and location
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
 
-### `yarn build`
+![](./src/img/scsh.jpg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Links
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Live Site URL: [live site URL](https://olehtovkaniuk.github.io/ip-tracker-fm/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## My process
 
-### `yarn eject`
+### Built with
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- CSS
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [Ipify](https://www.ipify.org/) - API for IP Geolocation
+- [Leaflet.js](https://leafletjs.com/) - JavaScript library for interactive maps
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### What I learned
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+✔ I learned about enviroment variables and made one to store Ipify API key.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+✔ I have recalled basic knowledge of dynamic data flow in React - from top component state to lower components throgh props.
 
-## Learn More
+✔ I ran into a problem with Adblocker that is blocking Ipify API bcz Ipify is included in Adblocker's EasyPrivacy Filter List. 
+Perfect decision would be to write some serverless logic which would receive client's request and redirect it to the real API. 
+But it requires deep dive into serverless architecture and I want to focus on React now, that's why I decided don't follow up this issue. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Continued development
+In the next projects I'm planning to practice:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+✔ dive deeper in practice of React: state management, Synthetic Events amd Forms, Async React;
 
-### Code Splitting
+✔ recall testing of React app using Jest;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+✔ add Redux and React Router to a project;
 
-### Analyzing the Bundle Size
+✔ use [Thinking in React](https://reactjs.org/docs/thinking-in-react.html) guide for building my next project;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Useful resources
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Article by Chris Love](https://love2dev.com/blog/what-the-heck-does-neterr_blocked_by_client-mean-and-how-can-you-fix-it/) - This helped me for better understanding of Adblocker issue.
+- [Leaflet - Build React.js Map App by Vicode Media](https://www.youtube.com/watch?v=PMtXhxW6t2k&t=1173s) - This video helped me to set up Leaflet.js maps.
