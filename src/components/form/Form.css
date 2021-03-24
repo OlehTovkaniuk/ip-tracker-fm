@@ -12,7 +12,6 @@ form {
     font-family: 'Rubik', sans-serif;
     border-radius: 10px 0px 0px 10px;
     border: none;
-    outline: none;
     padding-left: 20px;
   }
   form input[type=submit] {
@@ -25,7 +24,6 @@ form {
     background-color: black;
     border: none;
     border-radius: 0px 10px 10px 0px;
-    outline: none;
     cursor: pointer;
   }
 
