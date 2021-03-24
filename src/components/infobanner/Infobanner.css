@@ -5,11 +5,11 @@ div.banner-wrapper {
 
 div.banner{
     position: absolute;
-    top: 0;
+    top: 2em;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    padding: 30px;
+    padding: 20px;
     margin: 10px auto;
     text-align: center;
     border-radius: 8px;
@@ -54,12 +54,11 @@ div.banner{
     }
     
     div.banner{
-      position: absolute;
-      top: -80px;
+      top: -5em;
     }
 
     ul {
-      margin: 30px auto;
+      margin: 10px auto;
       display: flex;
     }
 
