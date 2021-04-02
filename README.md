@@ -48,7 +48,7 @@ Users should be able to:
 
 ✔ I learned about enviroment variables and made one to store Ipify API key.
 
-✔ I have recalled basic knowledge of dynamic data flow in React - from top component state to lower components throgh props.
+✔ I have recalled basic knowledge of dynamic data flow in React - from a top component's state to lower components throgh props.
 
 ✔ I ran into a problem with Adblocker that is blocking Ipify API bcz Ipify is included in Adblocker's EasyPrivacy Filter List. 
 Perfect decision would be to write some serverless logic which would receive client's request and redirect it to the real API. 
